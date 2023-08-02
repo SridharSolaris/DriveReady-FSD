@@ -1,0 +1,50 @@
+.white1{
+	height: 500px;
+	background-image: url(task7.1.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	text-align: right center;
+}
+.white2{
+	height: 500px;
+}
+.im1{
+	width: 250px;
+	height: 200px;
+	margin-left: 800px;
+	margin-top: 70px;
+}
+.im2{
+	width: 500px;
+	height: 300px;
+	margin-left: 350px;
+	margin-top: 70px;
+}
+.blue{
+	background-color: skyblue;
+	height: 300px;
+	
+}
+h1{
+	color: orange;
+	text-align: right;
+	font-size: 75px;
+	margin-top: 200px;
+	margin-right: 100px;
+}
+button{
+	background-color: skyblue;
+	color: white;
+	border-radius: 6px;
+	margin-left: 1000px;
+	margin-top: 10px;
+	margin-right: 50px;
+	font-size: 15px;
+	width: 90px;
+	height: 40px;
+	border: 0px solid white;
+}
+p{
+	margin-left: 700px;
+	margin-right: 50px;
+}

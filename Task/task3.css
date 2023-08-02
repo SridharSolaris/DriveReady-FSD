@@ -1,0 +1,53 @@
+.nav a{
+    margin-right: 20px;
+    padding-top:100px;
+}
+.pic
+{
+
+	font-size: 10px;
+	margin-left: 500px;
+
+}
+
+nav
+{
+	display: inline-block;
+	word-spacing: 20px;
+}
+a:link
+{
+	color: blue;
+}
+a:hover
+{
+	color: violet;
+}
+
+.box
+{
+	height: 130px;
+	width: 1500px;
+	background-color: whitesmoke;
+	font-family: monospace;
+}
+.wrapper
+{
+	height: 90px;
+	width: 1300px;
+	background-color: whitesmoke;
+	font-family: monospace;
+	padding-left: 200px;	
+}
+.form
+{
+	text-align: right;
+	padding-left: 50px;
+}
+.copyright
+{
+	height: 30px;
+	width: 1500px;
+	background-color: whitesmoke;
+	text-align: center;
+}

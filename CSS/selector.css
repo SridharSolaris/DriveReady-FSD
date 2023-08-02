@@ -6,3 +6,49 @@
     background-color: aquamarine;
     color:chocolate;
 }
+h1,p {
+    background-color:darkkhaki;
+    color:goldenrod;
+}
+body {
+    background-color:darkcyan;
+}
+span {
+    background-color: darkcyan;
+    color:red;
+}
+
+* {
+    font-family: cursive;
+    margin: 0px;
+    padding: 0px;
+}
+div {
+    background-color:yellowgreen;
+    width:500px;
+}
+input[type] {
+    color:fuchsia;
+}
+input[type="text"] {
+    color:blue;
+}
+input[type="number"] {
+    color:darkgreen;
+}
+a[href] {
+    background-color:orange;
+}
+
+a:link {
+    color: green;
+}
+a:hover {
+    color:brown;
+}
+a:visited {
+    color:violet;
+}
+a:active {
+    color:cornflowerblue;
+}
