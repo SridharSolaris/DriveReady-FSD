@@ -1,0 +1,22 @@
+.s1{
+	border: 2px solid black;
+	display: flex;
+	justify-content: center;
+	place-items: center;
+	height: 60px;
+}
+.s2{
+	background-color: blue;
+}
+.s3{
+	background-color: yellow;
+}
+.s4{
+	background-color: tomato;
+}
+.s5{
+	background-color: lightgreen;
+}
+.s12{
+	margin-top: 80px;
+}

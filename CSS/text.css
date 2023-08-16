@@ -1,0 +1,13 @@
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px 3px green,5px 5px 4px red;
+}
+div {
+    height:400px;
+    width:200px;
+    border: 2px solid black;
+}
+p {
+    text-transform: capitalize;
+    text-align: justify;
+}

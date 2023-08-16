@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+body {
+    background-color: #eee;
+}
+
+.hi i {
+    color: #b5b3b3;
+    border: 1px solid #b5b3b3;
+    border-radius: 5px;
+    padding: 6px;
+    margin-left: 4px;
+}
+
+.r {
+    margin:0px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #e3dada;
+    border-radius: 5px;
+}
+
+.checkbox {
+    color: green;
+    font-size: 19px !important;
+}
+
+.im {
+    width:30px;
+}
+
+.r span {
+    font-size: 13px;
+}
+
+

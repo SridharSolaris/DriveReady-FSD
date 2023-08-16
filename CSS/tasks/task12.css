@@ -1,0 +1,34 @@
+
+* {
+	box-sizing:border-box;
+	margin:0px;
+	padding: 0px;
+}
+
+.one
+{
+	background-color: skyblue;
+	height: 400px;
+	width: 600px;
+	border: 50px solid yellow;
+	padding: 30px;
+	margin: 50px;
+}
+h1 {
+	background-color: red;
+	height: 300px;
+	width: 500px;
+	padding: 30px;
+	margin: 50px;
+	
+}
+.three {
+	background-color: skyblue;
+	height: 200px;
+	width: 400px;
+	border: 50px solid yellow;
+	padding: 30px;
+	margin: 50px;
+	
+}
+

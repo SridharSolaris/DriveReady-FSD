@@ -1,0 +1,72 @@
+body {
+    background:#f1f1f1;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+.task-list {
+    list-style:none;
+    position: relative;
+    padding-top: 30px;
+}
+
+.task-list:after {
+    content: "";
+    position: absolute;
+    background: #ecedef;
+    height: 100%;
+    width: 2px;
+    top: 0;
+    left: 30px;
+    z-index: 1;
+}
+
+
+
+
+.g {
+    background: #1de9b6;
+}
+
+
+.task-list li {
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 20px;
+}
+
+
+.task-list li .task-icon {
+    position: absolute;
+    left: -17.5px;
+    top: 13px;
+    border-radius: 50%;
+    padding: 2px;
+    width: 17px;
+    height: 17px;
+    z-index: 2;
+    -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

@@ -1,0 +1,24 @@
+.container{
+    display: grid;
+    margin-top:50px;
+}
+.col{
+    border:2px solid white;
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+#title{
+    float: right;
+    height: 50px;
+}
+#gallery{
+    height: 250px;
+}
+#buyBox{
+    height: 200px;
+}
+#des,#rel{
+    height: 150px;
+    background-color: blue;
+}

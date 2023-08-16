@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Alerts</title>
+</head>
+<body>
+    <h1>Window Alerts</h1>
+    <script type="text/javascript">
+        name=prompt("What's your name");
+        x="Mr."+name+", Are you sure to want to delete?";
+        y="deleted,"+name;
+        z="cancelled,"+name;
+        alert("successfully completed, Mr."+name);
+        var c = confirm(x);
+        //document.write(c);
+        if(c==true) {
+            alert(y)
+        }
+        else {
+            alert(z)
+        }
+        var t = prompt("Enter the Value");
+        document.write(eval(t));
+    </script>
+</body>
+</html>

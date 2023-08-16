@@ -1,0 +1,23 @@
+.s1{
+	background-color: lightgrey;
+	height: 50px;
+	border: 5px double white;
+	display: flex;
+	justify-content: center;
+	place-items: center;
+}
+body{
+	background-color: black;
+}
+.s2{
+	margin-top: 80px;
+}
+.s3{
+	background-color: lightblue;
+	height: 60px;
+	border: 8px solid black;
+	display: flex;
+	justify-content: center;
+	place-items: center;
+	font-weight: bold;
+}
