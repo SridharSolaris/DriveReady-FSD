@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Regular Expression</h2>
+    <script>
+        // let str = 'sridhar';
+        // let re = /batch/;
+        // let output = re.test('fullstack BATCHaa');
+        // console.log(output);
+
+        // let re1 = /batch/i;
+        // let output1 = re1.test('fullstack BATCHaa');
+        // console.log(output1);
+
+        // let re2 = /^b/;
+        // let output2 = re2.test('batch'); //true
+        // console.log(output2);
+        // let output3 = re2.test('tbatch'); //false
+        // console.log(output3);
+        
+
+        /*if(output == true) {
+            console.log("Valid mowa");
+        }
+        else {
+            console.log("Not valid ento Lopam mowa");
+        }
+        console.log(output);*/
+
+        // let re = /batch/g //g for multiple indexes;
+        // res = re.exec("full stack course batch");
+        // console.log(res);
+        // console.log(res.index);
+
+        //Number
+        re = /^[0-9]{10}/ //valid upto 10 numbers but exceeds 10 numbers
+        output = re.test("9434667856");
+        console.log(output);
+
+        req = /^[0-9]{10}$/ //valid upto 10 numbrs and not exceeds
+        output1 = req.test("9434667856");
+        console.log(output1);
+
+        rea = /^[9][0-9]{9}$/ //starting with 9
+        output2 = rea.test("999999999");
+        console.log(output2);
+
+    </script>
+</body>
+</html>
