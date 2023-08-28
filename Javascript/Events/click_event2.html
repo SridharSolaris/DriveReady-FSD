@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event 2 Click</title>
+</head>
+<body>
+    <button id="btn_id">Click Here</button>
+    <script>
+        let btn = document.getElementById("btn_id");
+        //with function name
+        //btn.onclick = test();
+        //function test {
+        //}
+
+        //with anonymous function
+        btn.onclick = function() {
+           alert("testing...");
+        }
+        
+    </script>
+</body>
+</html>

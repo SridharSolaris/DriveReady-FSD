@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slifing Images Task</title>
+	<style type="text/css">
+		button{
+			border: 1px solid green;
+			padding: 10px;
+			background: yellow;
+			width: 150px;
+			border-radius: 15px;
+			font-size: 15px;
+			font-weight: bold;
+		}
+		img {
+			width: 800px;
+			height: 450px;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<button onclick="prevslide()">Prev</button>
+		<button onclick="nextslide()">Next</button>
+		<p id="output_id">
+			<img src="wallpapers/1.jpg" />
+		</p>
+	</center>
+	<script>
+		var i = 0;
+		function nextslide(){
+			if(i==5)
+			{
+				i=0;
+			}	
+				var res = ++i;
+				document.getElementById('output_id').innerHTML = "<img src='wallpapers/"+res+".jpg' />";
+					
+		}
+		function prevslide(){
+			if(i>1){
+				var res = --i;
+				document.getElementById('output_id').innerHTML = "<img src='wallpapers/"+res+".jpg' />";
+			}	
+		}
+		setInterval(nextslide,2000);
+	</script>
+</body>
+</html>

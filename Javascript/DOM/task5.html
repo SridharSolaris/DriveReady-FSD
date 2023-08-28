@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table DOM</title>
+</head>
+<body>
+    <table border="2">
+        <tr>
+            <th>Course Name</th>
+            <th>Course Number</th>
+            <th>Courses Fees</th>
+            <th>Places</th>
+        </tr>
+        <tbody id="tbodyid"></tbody>
+    </table>
+    <script>
+        for(i=0;i<=courses.length;i++)
+        {
+            let tr = document.createElement('tr');
+            let td1 = document.createElement('td');
+            let td2 = document.createElement('td');
+            let td3 = document.createElement('td');
+            let td4 = document.createElement('td');
+            td1.innerText = courses[i].name;
+            td2.innerText = courses[i].cno;
+            td3.innerText = courses[i].fees;
+            td4.innerText = courses[i].places;
+            tr.append(td1);
+            tr.append(td2);
+            tr.append(td3);
+            tr.append(td4);
+            document.getElementById("tbodyid").append(tr);
+        }  
+    </script>
+</body>
+</html>

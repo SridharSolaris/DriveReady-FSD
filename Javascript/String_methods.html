@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" cellspacing="0">
+        <tr>
+            <td>D</td>
+            <td>R</td>
+            <td>I</td>
+            <td>V</td>
+            <td>E</td>
+            <td></td>
+            <td>R</td>
+            <td>E</td>
+            <td>A</td>
+            <td>D</td>
+            <td>Y</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>-11</td>
+            <td>-10</td>
+            <td>-9</td>
+            <td>-8</td>
+            <td>-7</td>
+            <td>-6</td>
+            <td>-5</td>
+            <td>-4</td>
+            <td>-3</td>
+            <td>-2</td>
+            <td>-1</td>
+        </tr>
+    </table>
+    <script>
+        let str = 'drive ready';
+        function  ss(str_name) {
+            document.write("<b>"+str_name+"</b><br>");
+        }
+        ss("Original String = "+str);;
+        ss("String length = "+str.length)
+        ss("String length = "+str[2]);
+        //charAt  
+        ss("Char At method = "+str.charAt(str.charAt(3)));
+        //indexOf method
+        ss("Index of = "+str.indexOf('r'));
+        ss("Last Index of = "+str.lastIndexOf('r'));
+        let str1 = "    simhadri   ";
+        ss("Trim method = "+str1.trim()); //remove the spaces from left to right
+        let str2 = 'Drive Ready';
+        ss("Lower Case = "+str2.toLowerCase());
+        ss("Upper Case = "+str2.toUpperCase());
+        let str3 = "Ravi";
+        let str4 = ' Kiran';
+        let str5 = " sri";
+        let str6 = " sai";
+        ss("concate string = "+str3.concat(str4,str5,str6));
+        let str7 = 'fsd drive ready batch';
+        
+        //includes() => returns boolean value
+        ss("Includes method = "+str7.includes('batch')); //true
+        ss("Includes method = "+str7.includes('afternoon')) //false
+
+        // converting string into an array => split()
+        let str8 = "ravi&kiran";
+        console.log("Split method = "+ str8.split("&"))
+
+        //startsWith => returns the boolean value
+        let str9 = "vijay";
+        ss("Ends With = "+str1.startsWith('u')); //true
+        ss("Ends With = "+str9.startsWith('p')); //false
+
+        //endsWith => returns the boolean value
+        let str10= "harsa";
+        ss("Ends With = "+str1.endsWith('u')); //true
+        ss("Ends With = "+str9.endsWith('p')); //false
+
+        //slice method
+        //string.name('startpos,endpos-1')
+        ss("slice method = "+str.slice(1,4));
+        ss("slice method = "+str.slice(-4,-2));
+        ss("slice method = "+str.slice(-4,-2))
+
+        //substring method
+        //it allows only positive indexes
+        ss("slice method = "+str.substring(1,4));
+        ss("slice method = "+str.substring(4,1));
+        ss("slice method = "+str.substring(-1));
+
+        //substr method = substr(starpos,length of the characters from 1st arg position)
+        ss("substr method ="+str.substr(1,4));
+        ss("substr method ="+str.substr(1,6));
+    </script>
+</body>
+</html>

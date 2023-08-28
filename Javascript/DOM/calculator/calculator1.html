@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" >
+ 
+<head>
+  <meta charset="utf-8">
+  <title>Calculator</title>
+  <style>
+    td {
+      text-align: center;
+      font-weight: bold;
+      border : 1px solid #efe1e1;
+    }
+    td:not(#result_id) {
+      cursor: pointer;
+    }
+  </style>
+</head>
+ 
+<body>
+<script>
+  function getnum(val) {
+    //alert(val)
+    if(val =='=') {
+      let res= document.getElementById('result_id').innerText
+      document.getElementById('result_id').innerText = eval(res)
+    }
+    else 
+    {
+      document.getElementById('result_id').innerText +=val;
+    }
+  }
+  function clearAll() {
+    document.getElementById("result_id").value = "";
+}
+</script>
+<table class="calculator" border="1" cellspacing="0" cellpadding="6" width="400">
+  <tr>
+    <td colspan="4" style="height: 30px; text-align: right;"id="result_id"> </td>
+  </tr>
+  <tr>
+    <td onclick="getnum('9')">9</td>
+    <td onclick="getnum('8')">8</td>
+    <td onclick="getnum('7')">7</td>
+    <td onclick="getnum('/')">/</td>
+  </tr>
+  <tr>
+    <td onclick="getnum('6')">6</td>
+    <td onclick="getnum('5')">5</td>
+    <td onclick="getnum('4')">4</td>
+    <td onclick="getnum('*')">*</td>
+  </tr>
+  <tr>
+    <td onclick="getnum('3')">3</td>
+    <td onclick="getnum('2')">2</td>
+    <td onclick="getnum('1')">1</td>
+    <td onclick="getnum('-')">-</td>
+  </tr>
+  <tr>
+    <td onclick="getnum('0')">0</td>
+    <td onclick="clearAll()">C</td>
+    <td onclick="getnum('=')">=</td>
+    <td onclick="getnum('+')">+</td>
+  </tr>
+</table>
+ 
+<script type="text/javascript" src="calculator.js"></script>
+ 
+</body>
+ 
+</html>

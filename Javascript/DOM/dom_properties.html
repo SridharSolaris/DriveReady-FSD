@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | properties</title>
+</head>
+<body>
+    <h1 id="tt">FSD 123</h1>
+    <img id="dd" src="download.jpeg">
+    <input type="text" value="" id="ins_id"/>
+    <p class="course">HTML</p>
+    <p class="course">CSS</p>
+    <p class="course">JS</p>
+    <ul>
+        <li>AEC</li>
+        <li>ACET</li>
+        <li>ACOE</li>
+    </ul>
+    //<h1>The Document Object</h1>
+    <h2>The querySelectorAll() Method</h2>
+    <p>Set the background color of all h3, div and span elements:</p>
+    <h1>A H1 element</h1>
+    <h2>A H2 element</h2>
+    <h3>A H3 element</h3>
+    <div>A DIV element</div>
+    <p>A p element.</p>
+    <p>A p element with a <span style=""color:brown;></span> element inside.</p>
+    <script>
+        let hh = document.getElementById('tt').style.color="red";//h1
+        hh = document.getElementById('tt');
+        hh.style.fontSize="100px";
+        hh.innerHTML = 'FSD 456';
+        let img = document.getElementById('dd');
+        img.src='Tomato_je.jpg';
+        let ins = document.getElementById('ins_id');
+        console.log(ins)
+        ins.value="Sridhar";
+        //class
+        let paras = document.getElementsByClassName('course');
+        console.log(paras);
+        paras[0].innerText = 'Hyper Text Markup Language';
+        paras[2].style.color="red";
+        let lis = document.getElementsByTagName('li');
+        lis[0].style.color='red';
+        lis[0].style.fontSize="30px";
+        //query selector
+        let ele = document.querySelector(".course");
+        console.log(ele);
+        ele.style.color = 'red';
+        //querySelectorAll
+        const nodeList = document.querySelectorAll("h2,div,span");
+        for(i =0;i<n;i++) {
+            nodeList.style.
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <script type="text/javascript">
+         /*keyword functionname(arg1,arg2,...argn)
+         {
+             statements
+             return --optional
+         }*/
+
+
+        //normal function with no arguments
+        function test() {
+            document.write("Sridhar");
+        }
+        //test();
+
+
+        //function with one variable
+        function getname(a)
+        {
+            document.write(a);
+        }
+        getname("Sridhar<br>");
+
+        //function acceptiing input
+        var id=prompt("Scan your id");
+        function getrollnobyscan(rollno) {
+            document.write(rollno+"<br>");
+        }
+        getrollnobyscan(id);
+
+        //function with two varguments
+        function sum(num1=0,num2=0) {
+            document.write(num1+num2);
+        }
+        //sum()
+
+
+        //anonymous function
+        var output = function(num) {
+            return (num*10)
+        }
+        document.write(output(9)+"<br>")
+
+        /*arrow functions => 
+        no function keyword
+        after function name use with =
+        after parenthesis use with =>*/
+        mul = (num1,num2) => {
+            document.write(num1*num2,"<br>");
+        }
+        mul(3,4)
+
+        //arrow function with one argument
+        //getid = rollno => {} or
+        getid = (rollno) => {
+            document.write(rollno+"<br>");
+        }
+        getid(1234);
+
+        //arrow function with no arguments
+        test = () => {
+            document.write("testing...")
+        }
+        test();
+
+        //setTimeout() function
+        setTimeout(test1,2000)
+
+        function test1() {
+            document.write("Execute after 2 secs")
+        }
+
+        
+    </script>
+</body>
+</html>

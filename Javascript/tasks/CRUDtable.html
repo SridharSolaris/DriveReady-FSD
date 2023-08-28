@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    p {
+        display: inline;
+        font-size: 25px;
+    }
+    
+    .upfront {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    button {
+        border-radius: 6px;
+        color: #fff;
+        border-color: transparent;
+    }
+
+</style>
+<body>
+    <div class="container-fluid">
+        <div class="upfront">
+            <p>Product <b>Details</b></p>
+        <button class="" onclick="addEntry()" style="float:right; background-color:darkturquoise; color: #fff;"><i class="fa-solid fa-plus" style="color: #ffffff;"></i> Add New</button>
+        </div>
+        
+        <table id="table_id" class="table table-bordered" >
+            <thead>
+                <tr>
+                    <th>Product Id</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="body_id">
+                <tr>
+                    <td>456789</td>
+                    <td>Realme mobie</td>
+                    <td>16000</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+<script>
+    let data = [
+        { id: 1, name: 'John Doe', age: 25 },
+        { id: 2, name: 'Jane Smith', age: 30 }
+    ];
+
+    const tableBody = document.getElementById('body_id');
+
+    
+
+    function addEntry() {
+      const nameInput = document.getElementById('name');
+      const ageInput = document.getElementById('age');
+
+      const newEntry = {
+        id: data.length + 1,
+        name: nameInput.value,
+        age: parseInt(ageInput.value)
+      };
+
+      data.push(newEntry);
+      renderTable();
+
+      nameInput.value = '';
+      ageInput.value = '';
+    }
+    
+    function renderTable() {
+        tableBody.innerHTML = '';
+
+        data.forEach(entry => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${entry.id}</td>
+                <td>${entry.name}</td>
+                <td>${entry.age}</td>
+                <td>
+                    <button onclick="editEntry(${entry.id})">Edit</button>
+                    <button onclick="deleteEntry(${entry.id})">Delete</button>
+                </td>
+            `;
+            tableBody.appendChild(row);
+        });
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</html>
